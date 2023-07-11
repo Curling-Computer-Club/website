@@ -27,3 +27,11 @@ CURLING COMPUTER CLUB
 
 <img src="club.gif">
 
+<script>
+    // check for a specific query string parameter, if not present, then replace the body content with a text emoji
+    var urlParams = new URLSearchParams(window.location.search);
+    var codeword = urlParams.get('codeword');
+    if (codeword !== 'Open, Sesame') {
+        document.body.innerHTML = "🥌 🖥️ 👯‍♀️";
+    }
+</script>
